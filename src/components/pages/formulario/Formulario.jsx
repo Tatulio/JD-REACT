@@ -8,16 +8,6 @@ import "./formulario.css"
 
 
 const Formulario = () => {
-
-    /*  let valoresIniciales = {
-        nombre: "",
-        email: "",
-        contraseña: ""
-    } */
-    
-    /* const enviarForm = (data) => {
-        console.log(data)
-    }  */
     
     const {handleSubmit, handleChange, values, setFieldValue, errors} = useFormik({
         initialValues: {
@@ -34,8 +24,6 @@ const Formulario = () => {
             contraseña: Yup.string().required("Debes ingresar una Contraseña")
         }),
     })
-
-
 
     return (
     <div>
